@@ -1,0 +1,36 @@
+{
+  "name": "diceymio-monorepo",
+  "version": "0.1.0",
+  "description": "Board Game Ecommerce Platform - Monorepo",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "type-check": "turbo run type-check",
+    "test": "turbo run test",
+    "prisma:generate": "turbo run prisma:generate",
+    "prisma:migrate": "turbo run prisma:migrate",
+    "prisma:studio": "turbo run prisma:studio",
+    "prisma:seed": "turbo run prisma:seed"
+  },
+  "keywords": [
+    "ecommerce",
+    "board-games",
+    "nextjs",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^2.8.12",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "react-icons": "^5.6.0"
+  }
+}
